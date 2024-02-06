@@ -29,18 +29,18 @@ while True:
             print("Сумма очков броска компьютера равна: ", sum)
             if sum < 7 and a < 7:
                 points = points + bet
-                print("Ставка выйграла")
+                print("Вы выйграли")
 
             elif sum > 7 and a > 7:
                 points = points + bet
-                print("Ставка выйграла")
+                print("Вы выйграли")
             elif sum == a:
                 bet = bet * 4
                 points = points + bet
-                print("Ставка выйграла")
+                print("Вы выйграли")
             else:
                 points = points - bet
-                print("Ставка проиграла")
+                print("Вы проиграли")
 
             print("Хотите продолжить игру?")
             x = input("Для продолжения введите 'Да', для выхода введите 'Нет' ")
